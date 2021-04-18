@@ -11,7 +11,7 @@ const IndexPage = ({heroContent}) => {
   return (
     <Layout pageName="home">
       <Helmet>
-        <title>Home Page</title>
+        <title>Sashank Rampalli</title>
       </Helmet>
       <Container>
         <Hero content={heroContent}  />
