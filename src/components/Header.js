@@ -3,11 +3,12 @@ import { Link } from 'gatsby';
 
 import Container from 'components/Container';
 
-import {headerData} from "../assets/utils/mock"
+import {headerData} from "../utils/mock"
 import PropTypes from "prop-types"
 import TwitterIcon from "../assets/images/Twitter.svg"
 import LinkedInIcon from "../assets/images/linkedin.svg"
 import GithubIcon from "../assets/images/GitHub.svg"
+import MenuIcon from "../assets/images/Menu.svg"
 
 const Header = ({headerData}) => {
   return (
@@ -27,6 +28,9 @@ const Header = ({headerData}) => {
                 <img src={LinkedInIcon} alt="linkedin"/>
               </div>
             </nav>
+            <div className="header__nav-menu">
+              <img src={MenuIcon} alt="menu"/>
+            </div>
           </section>
       </Container>
     </header>

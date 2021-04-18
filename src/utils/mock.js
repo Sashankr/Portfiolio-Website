@@ -12,3 +12,8 @@ exports.headerData = {
     }
   ]
 }
+
+exports.heroContent = {
+  title : "Building Amazing Web Experiences",
+  asideImage : "/hero.svg", 
+}
