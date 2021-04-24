@@ -7,6 +7,11 @@
   margin-top: 135px;
   }
 
+  
+          @media(min-width: 1200px){
+      margin-top: 160px;
+    }
+
   &__wrapper{
     display: flex;
     justify-content: space-between;
@@ -20,6 +25,7 @@
       flex-direction: row;
       align-items: center;
     }
+
   }
 
   &__title{
@@ -35,7 +41,16 @@
 
     @media(min-width:900px){
       font-size: 65px;
+      width: 50%;
+      margin-bottom: unset;
+    }
+    @media(min-width:1200px){
       width: 45%;
     }
+
+    @media(min-width: 1440px){
+      width: 35%;
+    }
+
   }
 }
