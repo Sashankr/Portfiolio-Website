@@ -33,19 +33,19 @@
     color : var(--color-title);
 
     @media(min-width:200px){
-      font-size: 46px;
+      font-size: 3em;
       margin-bottom: var(--margin-mobile);
       width: 70%;
       margin-bottom: 80px;
     }
 
     @media(min-width:900px){
-      font-size: 65px;
-      width: 50%;
+      font-size: 3.3em;
+      width: 45%;
       margin-bottom: unset;
     }
     @media(min-width:1200px){
-      width: 45%;
+      width: 37%;
     }
 
     @media(min-width: 1440px){
