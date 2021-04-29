@@ -18,8 +18,12 @@
       align-items: center;
       grid-template-columns: 30% 30% 30% 30%;
      gap: 30px 0;
-     margin-right: 21px;
+     margin-right: 41px;
     }    
+
+    @media(min-width:400px){
+      margin-right: 31px;
+    }
 
     @media(min-width:440px){
       display: flex;
