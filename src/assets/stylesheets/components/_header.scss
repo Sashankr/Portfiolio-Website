@@ -8,20 +8,29 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    @media(min-width: 200px){
+      justify-content: space-between;
+    }
+    @media(min-width: 1020px){
+      justify-content: flex-start;
+    }
+
   }
 
   &__logo{
     font-weight: 900;
     color : var(--color-title);
     padding: 25px 0;
-    margin-right: 125px;
 
     @media(min-width:200px){
-      font-size: 18px;
+      font-size: 1.5em;
     }
     @media(min-width: 900px){
-    font-size: 26px;
-
+    font-size: 1.5em;
+    margin-right: 65px;
+    }
+    @media(min-width: 1100px){
+      margin-right: 125px;
     }
 
   }
@@ -35,7 +44,7 @@
     @media(min-width:200px){
       display: none;
     }
-    @media(min-width:900px){
+    @media(min-width:1020px){
       display: flex;
     }
   }
@@ -54,13 +63,35 @@
   }
 
   &__social{
-    &>img{
-      margin-right: 25px;
-      &:nth-child(2){
-        position: relative;
-        top: 4px;
-      }
+    @media (min-width:900px) {
+      margin-right: 20px;
+    }
+    @media(min-width: 1200px){
+    margin-right: 40px;
     }
   }
+
+  &__social-logo{
+      &>img{
+      margin-right: 25px;
+
+
+      width: 22px;
+      cursor: pointer;
+
+
+
+    }
+      &::before{
+        height: 0;
+        position: unset;
+      }
+  }
+
+  #twitter, #github{
+    position: relative;
+    top: 2px;
+  }
+
 
 }

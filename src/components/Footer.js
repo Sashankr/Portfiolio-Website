@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        {/* <p>&copy; {new Date().getFullYear()}, My Gatsby Site</p> */}
+       <div className="footer" style={{height:"30px"}}></div>
       </Container>
     </footer>
   );

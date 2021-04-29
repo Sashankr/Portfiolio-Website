@@ -6,7 +6,7 @@ import Container from "../components/Container";
 import Hero from "../components/Hero"
 import {heroContent} from "../utils/mock"
 import PropTypes from "prop-types"
-
+import Skills from "../components/Skills"
 const IndexPage = ({heroContent}) => {
   return (
     <Layout pageName="home">
@@ -15,6 +15,7 @@ const IndexPage = ({heroContent}) => {
       </Helmet>
       <Container>
         <Hero content={heroContent}  />
+        <Skills />
       </Container>
     </Layout>
   );

@@ -19,13 +19,15 @@ const Header = ({headerData}) => {
             <nav className="header__navigation">
               <ul className="header__navigation-list">
                 {headerData.navigation.map((data,index)=>{
-                  return <li key={index} className="header__navigation-item">{data.item}</li>
+                  return <li key={index} className="header__navigation-item"><Link to="/">
+                  {data.item}
+                  </Link></li>
                 })}
               </ul>
               <div className="header__social">
-                <img src={GithubIcon} alt="github"/>
-                <img src={TwitterIcon} alt="twitter"/>
-                <img src={LinkedInIcon} alt="linkedin"/>
+                <Link target="__blank" className="header__social-logo" to="https://github.com/Sashankr"><img id="github" src={GithubIcon} alt="github"/></Link>
+                <Link target="__blank" className="header__social-logo" to="https://twitter.com/sashank__r"><img id="twitter" src={TwitterIcon} alt="twitter"/></Link>
+                <Link target="__blank" className="header__social-logo" to="https://www.linkedin.com/in/sashank-rampalli"><img  src={LinkedInIcon} alt="linkedin"/></Link>
               </div>
             </nav>
             <div className="header__nav-menu">
