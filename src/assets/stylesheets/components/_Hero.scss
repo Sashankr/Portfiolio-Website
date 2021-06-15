@@ -27,7 +27,13 @@
     }
 
     &>img{
+      @media(min-width: 200px){
       width: 90%;
+
+      }
+      @media(min-width: 525px){
+        width: auto;
+      }
     }
 
   }

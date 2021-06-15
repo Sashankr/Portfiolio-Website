@@ -1,8 +1,8 @@
-.skills{
-    margin-top: 40px;
-    margin-bottom: 40px;
+.skills {
+  margin-top: 40px;
+  margin-bottom: 40px;
 
-  &__heading{
+  &__heading {
     color: var(--color-title);
     font-size: 22px;
     text-transform: uppercase;
@@ -10,76 +10,75 @@
     margin-bottom: 30px;
   }
 
-  &__logos{
+  &__logos {
     align-items: center;
-    @media(min-width:200px){
+    @media (min-width: 200px) {
       transform: translateX(-10px);
       display: grid;
       align-items: center;
       grid-template-columns: 30% 30% 30% 30%;
-     gap: 30px 0;
-     margin-right: 41px;
-    }    
+      gap: 30px 0;
+      margin-right: 41px;
+    }
 
-    @media(min-width:400px){
+    @media (min-width: 400px) {
       margin-right: 31px;
     }
 
-    @media(min-width:440px){
+    @media (min-width: 440px) {
       display: flex;
       transform: translateX(-10px);
     }
 
-    @media(min-width:900px){
+    @media (min-width: 900px) {
       display: flex;
       transform: translateX(-20px);
     }
 
-    & > img{
-    margin-right: 30px;
-  }
+    & > img {
+      margin-right: 30px;
+    }
   }
 
-  #react{
-    @media(min-width: 200px){
-    width: 90px;
-    height: 90px;
+  #react {
+    @media (min-width: 200px) {
+      width: auto;
+      height: 90px;
     }
 
-    @media(min-width: 900px){
-    width: 120px;
-    height: 150px;
+    @media (min-width: 900px) {
+      width: 120px;
+      height: 150px;
     }
   }
-  #gatsby{
-    @media(min-width: 200px){
-    width: 90px;
-    height: 80px;
+  #gatsby {
+    @media (min-width: 200px) {
+      width: auto;
+      height: 80px;
     }
-      @media(min-width: 900px){
-    width: 100px;
-    height: 126px;
-      }
-  }
-  #graphql{
-    @media(min-width: 200px){
-    width: 90px;
-    height: 80px;
+    @media (min-width: 900px) {
+      width: 100px;
+      height: 126px;
     }
-      @media(min-width: 900px){
-    width: 110px;
-    height: 128px;
-      }
   }
-  #wordpress{
-    @media(min-width: 200px){
-    width: 90px;
-    height: 70px;
+  #graphql {
+    @media (min-width: 200px) {
+      width: auto;
+      height: 80px;
     }
-      @media(min-width: 900px){
-    width: 90px;
-    height: 128px;
-      }
+    @media (min-width: 900px) {
+      width: 110px;
+      height: 128px;
+    }
   }
-
+  #wordpress {
+    @media (min-width: 200px) {
+      width: auto;
+      height: 70px;
+    }
+    @media (min-width: 900px) {
+      width: 90px;
+      height: 128px;
+    }
+  }
 }
